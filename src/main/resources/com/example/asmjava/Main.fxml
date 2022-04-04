@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.asmjava.MainController">
+   <children>
+      <Button layoutX="339.0" layoutY="225.0" mnemonicParsing="false" onAction="#changeManagerScene" prefHeight="64.0" prefWidth="123.0" text="Manager" />
+      <Button layoutX="339.0" layoutY="301.0" mnemonicParsing="false" onAction="#changeOfficerScene" prefHeight="64.0" prefWidth="123.0" text="Officer" />
+      <Button layoutX="339.0" layoutY="384.0" mnemonicParsing="false" onAction="#changeCommentScene" prefHeight="64.0" prefWidth="123.0" text="Comment" />
+      <TextField layoutX="220.0" layoutY="83.0" prefHeight="125.0" prefWidth="360.0" text="Employee Management Application">
+         <font>
+            <Font size="21.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="463.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.asmjava.ManagerController">
+   <children>
+      <VBox layoutX="51.0" layoutY="134.0" prefHeight="188.0" prefWidth="50.0" spacing="21.0">
+         <children>
+            <Label text="ID">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" text="Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="27.0" text="Age">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="44.0" text="Month">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="61.0" text="Salary">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="123.0" layoutY="134.0" prefHeight="188.0" prefWidth="163.0" spacing="15.0">
+         <children>
+            <TextField fx:id="tfID" />
+            <TextField fx:id="tfName" layoutX="10.0" layoutY="10.0" />
+            <TextField fx:id="tfAge" layoutX="10.0" layoutY="35.0" />
+            <TextField fx:id="tfMonth" layoutX="10.0" layoutY="60.0" />
+            <TextField fx:id="tfSalary" layoutX="10.0" layoutY="85.0" prefHeight="25.0" prefWidth="136.0" />
+         </children>
+      </VBox>
+      <Button fx:id="btnInsert" layoutX="51.0" layoutY="358.0" mnemonicParsing="false" onAction="#addManager" prefHeight="25.0" prefWidth="66.0" text="Insert" />
+      <Button fx:id="btnUpdate" layoutX="132.0" layoutY="358.0" mnemonicParsing="false" onAction="#updateManager" prefHeight="25.0" prefWidth="72.0" text="Update" />
+      <Button fx:id="btnDelete" layoutX="219.0" layoutY="358.0" mnemonicParsing="false" onAction="#deleteManager" prefHeight="25.0" prefWidth="66.0" text="Delete" />
+      <TableView fx:id="tvManager" layoutX="319.0" layoutY="122.0" onMouseClicked="#chooseItemFromTable" prefHeight="310.0" prefWidth="449.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="43.0" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="176.0" text="Name" />
+            <TableColumn fx:id="colAge" prefWidth="66.0" text="Age" />
+            <TableColumn fx:id="colMonth" prefWidth="73.0" text="Month" />
+          <TableColumn fx:id="colSalary" prefWidth="89.0" text="Salary ($)" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfSearch" layoutX="282.0" layoutY="62.0" prefHeight="32.0" prefWidth="274.0" />
+      <Button layoutX="588.0" layoutY="62.0" mnemonicParsing="false" onAction="#searchManager" prefHeight="32.0" prefWidth="66.0" text="Search" />
+      <Button layoutX="51.0" layoutY="62.0" mnemonicParsing="false" onAction="#changeMainScene" prefHeight="32.0" prefWidth="66.0" text="Back" />
+      <Button layoutX="672.0" layoutY="62.0" mnemonicParsing="false" onAction="#refreshTable" prefHeight="32.0" prefWidth="96.0" text="Refresh Table" />
+      <Button layoutX="153.0" layoutY="62.0" mnemonicParsing="false" onAction="#refreshForm" prefHeight="32.0" prefWidth="89.0" text="Refresh Form" />
+      <Label layoutX="286.0" layoutY="299.0" text="\$" />
+      <Label layoutX="353.0" layoutY="23.0" text="MANAGERS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

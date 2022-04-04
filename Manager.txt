@@ -1,0 +1,4 @@
+1, Bao, 33, 3, 3333.0
+30, Doan Tran Vinh Kha, 30, 5, 5000.0
+25, Nguyen Khanh Nam, 25, 7, 60000.0
+10, Gia bao, 45, 5, 50000.0
